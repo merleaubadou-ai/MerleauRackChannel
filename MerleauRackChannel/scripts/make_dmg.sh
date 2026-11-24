@@ -28,7 +28,7 @@ cp -R "$APP"  "$ROOT/Applications/"
 pkgbuild --analyze --root "$ROOT" dist/components.plist
 i=0
 while /usr/libexec/PlistBuddy -c "Print :$i" dist/components.plist >/dev/null 2>&1; do
-  /usr/libexec/PlistBuddy -c "Set :$i:BundleIsRelocatable false" dist/components.plist
+  /usr/libexec/PlistBuddy -c "Delete :$i:BundleIsRelocatable" dist/components.plist >/dev/null 2>&1 || true; /usr/libexec/PlistBuddy -c "Add :$i:BundleIsRelocatable bool false" dist/components.plist
   i=$((i+1))
 done
 
