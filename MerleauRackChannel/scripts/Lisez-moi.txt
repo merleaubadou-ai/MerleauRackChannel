@@ -1,0 +1,27 @@
+MERLEAURACK CHANNEL 1.0 - Merleau Audio
+=======================================
+
+INSTALLATION
+1. Double-clique sur « Installer MerleauRack Channel.pkg ».
+   Si macOS bloque l'ouverture (« développeur non identifié ») :
+   clic droit sur le .pkg > Ouvrir > Ouvrir.
+   Ou : Réglages Système > Confidentialité et sécurité > « Ouvrir quand même ».
+2. Suis l'installeur. Il installe :
+   - Audio Unit : /Library/Audio/Plug-Ins/Components/MerleauRack Channel.component
+   - VST3       : /Library/Audio/Plug-Ins/VST3/MerleauRack Channel.vst3
+   - Application autonome : /Applications/MerleauRack Channel.app
+3. Relance ton logiciel (Logic, Ableton, Studio One, Pro Tools via VST3 wrapper, FL Studio...)
+   et fais un nouveau scan des plugins si besoin.
+   Le plugin apparaît sous « Merleau Audio > MerleauRack Channel ».
+
+UTILISATION
+- 5 modules : PREAMP, GATE, EQUALIZER, COMPRESSOR, DE-ESSER + section MASTER.
+- Pour changer l'ordre : attrape un module par son bandeau titre (les petits points)
+  et dépose-le sur un autre emplacement.
+- Ou choisis un ordre tout prêt dans le menu « ORDRE DE LA CHAÎNE ».
+- Bouton IN (LED rouge) : active ou contourne le module.
+- Double-clic sur un bouton rotatif = retour à la valeur par défaut.
+- L'ordre et les réglages sont sauvegardés avec ton projet.
+
+DÉSINSTALLATION
+Supprime les trois fichiers listés ci-dessus.
